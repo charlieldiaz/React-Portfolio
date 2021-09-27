@@ -79,7 +79,7 @@ const Works = [
     category: ["Adobe Creative Cloud", "HTML5", "SASS", "Javascript"],
     image: work6,
     link1: "https://github.com/charlieldiaz/myFirstPortfolio",
-    link2: "myfirstportfolio-carlos.netlify.app",
+    link2: "https://myfirstportfolio-carlos.netlify.app/",
     title: "Responsive Portfolio Website",
     text: "Created from scratch using different technologies such as HTML5, SASS and Javascript",
   },

@@ -17,7 +17,7 @@ const ImageSection = () => {
         </div>
         <p className="paragraph">
           A Vancouver-based developer who happens to love programming,
-          designing, traveling and meeting people. I specially love solving
+          designing, traveling, and meeting people. I especially love solving
           problems with the use of logic and creativity. My desire to code
           started when I was in my teenage years and I wanted to customize my PC
           games. From then on I was obsessed with the idea of creating from
