@@ -14,10 +14,10 @@ const Works = [
     id: 1,
     category: ["React JS", "Styled Components", "Firebase"],
     image: work11,
-    link1: "hhttps://github.com/charlieldiaz/Netflix-Clone-React",
+    link1: "https://github.com/charlieldiaz/Netflix-Clone-React",
     link2: "https://netflix-clone-cd.web.app/",
     title: "Netflix Clone",
-    text: "A Netflix clone. Working with Firebase. Thanks to Karl Hadwen for the tutorial.",
+    text: "A Netflix clone. Compund Components and Styled Components. Working with Firebase.",
   },
   {
     id: 2,
@@ -50,7 +50,8 @@ const Works = [
     id: 5,
     category: ["React JS", "Styled Components", "CSS"],
     image: work9,
-    link1: "https://www.github.com/charlieldiaz/Pig-Game-App",
+    link1:
+      "https://github.com/charlieldiaz/React-Portfolio/blob/master/README.md",
     link2: "https://www.carlosldiaz.com/",
     title: "React Responsive Portfolio",
     text: "This Website! Checkout my portfolio code in Github.",
