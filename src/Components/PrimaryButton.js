@@ -1,8 +1,12 @@
 import React from "react";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 
 const PrimaryButton = ({ title }) => {
-  return <PrimaryButtonStyled>{title}</PrimaryButtonStyled>;
+  return (
+    <PrimaryButtonStyled href="/documents/CarlosDiaz-Resume.pdf" download>
+      {title}
+    </PrimaryButtonStyled>
+  );
 };
 
 const PrimaryButtonStyled = styled.a`
@@ -15,6 +19,9 @@ const PrimaryButtonStyled = styled.a`
   text-transform: uppercase;
   position: relative;
   transition: all 0.4s ease-in-out;
+  @media screen and (max-width: 440px) {
+    font-size: 1rem;
+  }
   &::after {
     content: "";
     position: absolute;

@@ -1,10 +1,13 @@
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import React from "react";
+import { useHistory } from "react-router-dom";
 
 const ServiceCard = ({ image, title, paragraph }) => {
+  const history = useHistory();
+  const redirect = () => history.push("/contact");
   return (
     <ServiceCardStyled>
-      <div className="container">
+      <div className="container" onClick={redirect}>
         <img src={image} alt="" className="svg" />
         <h4>{title}</h4>
         <p>{paragraph}</p>
@@ -20,6 +23,7 @@ const ServiceCardStyled = styled.div`
   border-top: 8px solid var(--border-color);
   border-right: 1px solid var(--border-color);
   transition: all 0.4s ease-in-out;
+  cursor: pointer;
   &:hover {
     border-top: 8px solid var(--primary-color);
     transform: translateY(3px);

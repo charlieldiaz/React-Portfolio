@@ -1,5 +1,5 @@
 import { MainLayout } from "../styles/Layouts";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import Title from "../Components/Title";
 import ImageSection from "../Components/ImageSection";
 import ServicesSection from "../Components/ServicesSection";

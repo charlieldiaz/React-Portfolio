@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import Title from "../Components/Title";
 import { InnerLayout, MainLayout } from "../styles/Layouts";
 import Works from "../data/works";

@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import Particle from "../Components/Particle";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GithubIcon from "@material-ui/icons/GitHub";

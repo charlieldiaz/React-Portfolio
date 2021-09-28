@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 const Title = ({ title, span }) => {
   return (
     <TitleStyled>
@@ -54,7 +54,7 @@ const TitleStyled = styled.div`
       left: 0;
       top: 30%;
       z-index: -1;
-      @media screen and (max-width: 620px) {
+      @media screen and (max-width: 700px) {
         font-size: 4rem;
       }
       @media screen and (max-width: 496px) {
