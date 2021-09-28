@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import Title from "../Components/Title";
 import blogs from "../data/blogs";
 import { InnerLayout, MainLayout } from "../styles/Layouts";

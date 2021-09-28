@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import { MainLayout, InnerLayout } from "../styles/Layouts";
 import Title from "../Components/Title";
 import PhoneIcon from "@material-ui/icons/Phone";
@@ -79,11 +79,9 @@ const ContactPageStyled = styled.section`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 2rem;
-    @media screen and (max-width: 978px) {
-      grid-template-columns: repeat(1, 1fr);
-      .f-button {
-        margin-bottom: 3rem;
-      }
+
+    @media screen and (max-width: 464px) {
+      margin-top: 20%;
     }
     .right-content {
       display: grid;
@@ -92,7 +90,7 @@ const ContactPageStyled = styled.section`
         width: 70%;
       }
     }
-    .contact-title {
+    /* .contact-title {
       h4 {
         color: var(--white-color);
         padding: 1rem 0;
@@ -135,7 +133,7 @@ const ContactPageStyled = styled.section`
           padding: 0.8rem 1rem;
         }
       }
-    }
+    } */
   }
 `;
 

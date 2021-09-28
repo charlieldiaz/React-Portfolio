@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 
 const ContactItem = ({ icon, title, contact1 }) => {
   return (
@@ -24,16 +24,30 @@ const ContactItemStyled = styled.div`
   &:not(:last-child) {
     margin-bottom: 2.5rem;
   }
+  @media (max-width: 658px) {
+    padding: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+
   .left-content {
     padding: 1.5rem;
     border: 1px solid var(--border-color);
     font-size: 2rem;
     display: flex;
-    align-items: center;
+    align-items: left;
     justify-content: center;
     margin-right: 1.5rem;
     svg {
       font-size: 2.3rem;
+    }
+    @media (max-width: 485px) {
+      padding: 20px 0;
+      p {
+        font-size: smaller;
+      }
     }
   }
   .right-content {

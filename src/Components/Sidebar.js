@@ -1,11 +1,22 @@
 import React from "react";
 
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import Navigation from "./Navigation";
 
-const Sidebar = ({ navToggle }) => {
+const Sidebar = ({
+  navToggle,
+  setNavToggle,
+  showMenuIcon,
+  setShowMenuIcon,
+}) => {
   return (
-    <SidebarStyled className={`${navToggle ? "nav-toggle" : ""}`}>
+    <SidebarStyled
+      onClick={() => {
+        setNavToggle(!navToggle);
+        setShowMenuIcon(!showMenuIcon);
+      }}
+      className={`${navToggle ? "nav-toggle" : ""}`}
+    >
       <Navigation />
     </SidebarStyled>
   );

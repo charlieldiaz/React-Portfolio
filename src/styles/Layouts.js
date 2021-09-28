@@ -12,4 +12,7 @@ export const MainLayout = styled.div`
 
 export const InnerLayout = styled.div`
   padding: 5rem 0;
+  @media (max-width: 430px) {
+    padding: 1rem 0;
+  }
 `;

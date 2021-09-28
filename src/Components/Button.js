@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 
 const Button = ({ filterButton, button }) => {
   return (
@@ -36,6 +36,9 @@ const ButtonStyled = styled.button`
   &:not(:last-child) {
     margin-right: 0.6rem;
   }
+  @media (max-width: 430px) {
+    display: none;
+  }
 `;
 
 const DivStyled = styled.div`
@@ -43,7 +46,7 @@ const DivStyled = styled.div`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  width: 70%;
+  width: 90%;
   margin: 2.5rem auto;
 `;
 

@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import { InnerLayout } from "../styles/Layouts";
 import ServiceCard from "./ServiceCard";
 import Title from "./Title";

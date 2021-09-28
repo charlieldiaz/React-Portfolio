@@ -52,7 +52,7 @@ const Works = [
     image: work9,
     link1:
       "https://github.com/charlieldiaz/React-Portfolio/blob/master/README.md",
-    link2: "https://www.carlosldiaz.com/",
+    link2: "/",
     title: "React Responsive Portfolio",
     text: "This Website! Checkout my portfolio code in Github.",
   },
@@ -88,7 +88,7 @@ const Works = [
     category: ["Adobe Creative Cloud", "WordPress"],
     image: work7,
     link1: "https://mehnt.com/",
-    link2: "",
+    link2: "https://mehnt.com/",
     title: "Photoshoot for Mehnt",
     text: "Product phootshoot",
   },

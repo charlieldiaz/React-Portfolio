@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from "styled-components/macro";
 
 const GlobalStyle = createGlobalStyle`
 
@@ -44,6 +44,7 @@ const GlobalStyle = createGlobalStyle`
     --scrollbar-bg-color: #383838;
     --scrollbar-thump-color: #6b6b6b;
     --scrollbar-track-color: #383838;
+    padding-bottom: 200px;
     }
 
     .dark-theme{
@@ -75,6 +76,11 @@ const GlobalStyle = createGlobalStyle`
         text-decoration: none;
         font-family: 'Nunito', sans-serif;
         font-size: 1.2rem;
+        @media(max-width: 578px) {
+    p{
+        font-size: 1rem;
+    }
+  }
     }
 
     body{
@@ -134,6 +140,12 @@ const GlobalStyle = createGlobalStyle`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media(max-width: 662px) {
+    top: 90%;
+  }
+
+    
     svg {
       display: flex;
       align-items: center;
@@ -147,11 +159,12 @@ const GlobalStyle = createGlobalStyle`
 .ham-burger-menu{
     position: absolute;
     right: 5%;
-    top: 3%;
+    top: 9%;
     display: none;
     z-index: 15;
     svg{
     font-size: 3rem;
+    
 }}
 
 .nav-toggle{
@@ -159,15 +172,20 @@ const GlobalStyle = createGlobalStyle`
     z-index: 20;
 }
 
+@media screen and (max-width: 578px) {
+    .ham-burger-menu{
+        right: 0%;
+        top: 0%;
+
+    }
+    }
+
+
 @media screen and (max-width: 1200px) {
     .ham-burger-menu{
         display: block;
     }
   }
-
-// Global Media Queries
-
-
 
   `;
 export default GlobalStyle;

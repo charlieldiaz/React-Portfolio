@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Route, Switch as Switching } from "react-router-dom";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import Sidebar from "./Components/Sidebar";
 import HomePage from "./Pages/homePage";
 import WorksPage from "./Pages/WorksPage";
@@ -10,12 +10,14 @@ import BlogPage from "./Pages/BlogPage";
 import Brightness4Icon from "@material-ui/icons/Brightness4";
 import Switch from "@material-ui/core/Switch";
 import MenuIcon from "@material-ui/icons/Menu";
+import CloseIcon from "@mui/icons-material/Close";
 import { IconButton } from "@material-ui/core";
 
 function App() {
   const [theme, setTheme] = useState("light-theme");
   const [checked, setChecked] = useState(false);
-  const [navToggle, setNaveToggle] = useState(false);
+  const [navToggle, setNavToggle] = useState(false);
+  const [showMenuIcon, setShowMenuIcon] = useState(true);
 
   useEffect(() => {
     document.documentElement.className = theme;
@@ -33,7 +35,12 @@ function App() {
 
   return (
     <div className="App">
-      <Sidebar navToggle={navToggle} />
+      <Sidebar
+        navToggle={navToggle}
+        setNavToggle={setNavToggle}
+        showMenuIcon={showMenuIcon}
+        setShowMenuIcon={setShowMenuIcon}
+      />
       <div className="theme">
         <div className="light-dark-mode">
           <div className="left-content">
@@ -51,12 +58,23 @@ function App() {
         </div>
       </div>
       <div className="ham-burger-menu">
-        <IconButton
-          onClick={() => {
-            setNaveToggle(!navToggle);
-          }}
-        >
-          <MenuIcon />
+        <IconButton>
+          {" "}
+          {showMenuIcon ? (
+            <MenuIcon
+              onClick={() => {
+                setNavToggle(!navToggle);
+                setShowMenuIcon(!showMenuIcon);
+              }}
+            />
+          ) : (
+            <CloseIcon
+              onClick={() => {
+                setNavToggle(!navToggle);
+                setShowMenuIcon(!showMenuIcon);
+              }}
+            />
+          )}
         </IconButton>
       </div>
 
@@ -111,7 +129,7 @@ const MainContentStyled = styled.main`
     .line-2,
     .line-3,
     .line-4 {
-      width: 1px;
+      width: 0.5px;
       min-height: 100vh;
       background-color: var(--border-color);
     }
