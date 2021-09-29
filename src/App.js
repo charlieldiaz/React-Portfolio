@@ -18,6 +18,7 @@ function App() {
   const [checked, setChecked] = useState(false);
   const [navToggle, setNavToggle] = useState(false);
   const [showMenuIcon, setShowMenuIcon] = useState(true);
+  const [outsideClicked, setOutsideClicked] = useState(false);
 
   useEffect(() => {
     document.documentElement.className = theme;
@@ -60,7 +61,7 @@ function App() {
       <div className="ham-burger-menu">
         <IconButton>
           {" "}
-          {showMenuIcon ? (
+          {showMenuIcon || outsideClicked ? (
             <MenuIcon
               onClick={() => {
                 setNavToggle(!navToggle);
@@ -78,7 +79,15 @@ function App() {
         </IconButton>
       </div>
 
-      <MainContentStyled>
+      <MainContentStyled
+        onClick={() => {
+          if (navToggle) {
+            setNavToggle(!navToggle);
+            setShowMenuIcon(!showMenuIcon);
+            setOutsideClicked(!outsideClicked);
+          }
+        }}
+      >
         <div className="lines">
           <div className="line-1"></div>
           <div className="line-2"></div>
