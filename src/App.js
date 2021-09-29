@@ -61,7 +61,7 @@ function App() {
       <div className="ham-burger-menu">
         <IconButton>
           {" "}
-          {showMenuIcon || outsideClicked ? (
+          {showMenuIcon ? (
             <MenuIcon
               onClick={() => {
                 setNavToggle(!navToggle);
@@ -81,9 +81,10 @@ function App() {
 
       <MainContentStyled
         onClick={() => {
-          if (navToggle) {
+          console.log(showMenuIcon);
+          if (showMenuIcon === false) {
             setNavToggle(!navToggle);
-            setShowMenuIcon(!showMenuIcon);
+            setShowMenuIcon(true);
             setOutsideClicked(!outsideClicked);
           }
         }}
