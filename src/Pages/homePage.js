@@ -6,7 +6,7 @@ import GithubIcon from "@material-ui/icons/GitHub";
 import InstagramIcon from "@material-ui/icons/Instagram";
 
 const homePage = () => {
-  const text = `youCanCode( it );`;
+  const text = `uCanCode( it );`;
   return (
     <HomePageStyled>
       <div className="particle-con">
