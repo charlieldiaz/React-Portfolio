@@ -15,7 +15,7 @@ const Works = [
     category: ["React JS", "Styled Components", "Firebase"],
     image: work11,
     link1: "https://github.com/charlieldiaz/netflix-clone-2.1",
-    link2: "https://netflix-clone-v21.vercel.app",
+    link2: "https://clone-v21.vercel.app/",
     title: "Netflix Clone",
     text: "A Netflix clone. Compund Components and Styled Components. Working with Firebase.",
   },
