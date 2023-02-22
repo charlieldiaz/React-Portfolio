@@ -58,6 +58,16 @@ const Works = [
   },
   {
     id: 6,
+    category: ["Nex JS", "React Js", "CSS"],
+    image: work12,
+    link1:
+      "https://github.com/charlieldiaz/Next-Events-App",
+    link2: "https://next-events-app-one.vercel.app/",
+    title: "Next Js Events App",
+    text: "See Future and Past Events around you with this Next Js app!",
+  },
+  {
+    id: 7,
     category: ["Javascript", "CSS"],
     image: work4,
     link1: "https://www.github.com/charlieldiaz/Pig-Game-App",
@@ -66,7 +76,7 @@ const Works = [
     text: "A Javascript Game. Play with your friends!",
   },
   {
-    id: 7,
+    id: 8,
     category: ["Javascript", "SASS"],
     image: work1,
     link1: "https://www.github.com/charlieldiaz/forkify-app",
@@ -75,7 +85,7 @@ const Works = [
     text: "Search your favorite recipes and adjust to size. Thanks Jonas Schmedtmann for the tutorial. ",
   },
   {
-    id: 8,
+    id: 9,
     category: ["Adobe Creative Cloud", "HTML5", "SASS", "Javascript"],
     image: work6,
     link1: "https://github.com/charlieldiaz/myFirstPortfolio",
@@ -84,7 +94,7 @@ const Works = [
     text: "Created from scratch using different technologies such as HTML5, SASS and Javascript",
   },
   {
-    id: 9,
+    id: 10,
     category: ["Adobe Creative Cloud", "WordPress"],
     image: work7,
     link1: "https://mehnt.com/",
@@ -93,7 +103,7 @@ const Works = [
     text: "Product phootshoot",
   },
   {
-    id: 10,
+    id: 11,
     category: ["HTML5", "Javascript", "CSS"],
     image: work8,
     link1: "https://github.com/charlieldiaz/GeoLocationApp",
