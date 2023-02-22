@@ -8,6 +8,7 @@ import work8 from "../img/works/work8.jpg";
 import work9 from "../img/works/work9.jpg";
 import work10 from "../img/works/work10.jpg";
 import work11 from "../img/works/work11.jpg";
+import work12 from "../img/works/work12.PNG";
 
 const Works = [
   {
